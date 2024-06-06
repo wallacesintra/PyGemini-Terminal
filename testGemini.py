@@ -25,9 +25,14 @@ class MyGeminiApi():
 
         title = self.generativeModel.generate_content("generate a title and the title should not be more than 5 words in text for " + response.text)
 
-        promptTitle = util.replace_whitespace(title.text)
+        promptTitle = util.replace_whitespace_with_underscore(title.text)
+
+        if "**" in promptTitle:
+            promptTitle = promptTitle.replace("**", "")
+
+        util.write_file(promptTitle + ".md", response.text)
         
-        write_file(promptTitle + ".md", response.text)
+        # write_file(promptTitle + ".md", response.text)
 
         responseText = response.text
 

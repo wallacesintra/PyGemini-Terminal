@@ -23,6 +23,7 @@ class Util():
             file.close()
             return content
 
+    
     def get_file_list(self):
         import os
 
@@ -35,15 +36,20 @@ class Util():
         file_name = os.path.join('history', file_name)
         os.remove(file_name)
         return True
-
-    def delete_all_files(self):
+    
+    def clear_screen(self):
         import os
 
-        file_list = os.listdir('history')
-        for file in file_list:
-            file = os.path.join('history', file)
-            os.remove(file)
+        os.system('clear')
         return True
+
+    def clear_all_history(self):
+        import os
+
+        if(os.path.exists('history')):
+            os.system('rm -r history/*')
+        return True
+
 
     def get_file_path(self, file_name):
         import os
@@ -51,8 +57,8 @@ class Util():
         file_name = os.path.join('history', file_name)
         return file_name
     
-    def replace_whitespace(self, text):
+    def replace_whitespace_with_underscore(self, text):
         return text.replace(" ", "_")
     
-    def replace_underscore(self, text):
+    def replace_underscore_with_whitespace(self, text):
         return text.replace("_", " ")
