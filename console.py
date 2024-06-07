@@ -3,7 +3,7 @@
 import cmd
 import os
 
-from testGemini import MyGeminiApi
+from gemini_api import MyGeminiApi
 
 from rich.console import Console
 from rich.markdown import Markdown

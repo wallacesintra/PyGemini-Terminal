@@ -5,15 +5,11 @@ import google.generativeai as genai
 from writePrompt import write_file
 from util import Util
 
-# genai.configure(api_key= "your_gemini_api_key")
-genai.configure(api_key= "AIzaSyBPGXS5ps6nYr1Wl4ndP9KImPlPmljPp9Q")
+genai.configure(api_key= "your_gemini_api_key")
 
 
 util = Util()
 
-
-
-# model = genai.GenerativeModel('gemini-pro')
 
 
 class MyGeminiApi():
@@ -32,8 +28,6 @@ class MyGeminiApi():
 
         util.write_file(promptTitle + ".md", response.text)
         
-        # write_file(promptTitle + ".md", response.text)
-
         responseText = response.text
 
         return responseText
