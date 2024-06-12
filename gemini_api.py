@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+Class MyGeminiApi is responsible for the gemini api
+
+"""
 import google.generativeai as genai
 
 from writePrompt import write_file

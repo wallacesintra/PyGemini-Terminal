@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+"""
+Class MyPrompt inherits from cmd.Cmd
+This class is responsible for the console interface
+"""
+
 import cmd
 import os
 
