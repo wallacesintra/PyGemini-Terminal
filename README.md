@@ -29,7 +29,17 @@ The `console.py` script provides a command-line interface for interacting with t
 
 ### Starting the Console
 
-To start the console, navigate to the directory containing `console.py` and run the script with Python:
+get your gemini API key from [ai.google.dev/gemini-api/docs/api-key](https://ai.google.dev/gemini-api/docs/api-key)
+
+To start the console, navigate to the directory containing `console.py`
+
+```python
+genai.configure(api_key= "your_gemini_api_key")
+```
+
+replace `your_gemini_api_key` with your API key
+
+and run the script with Python:
 
 ```bash
 python3 console.py

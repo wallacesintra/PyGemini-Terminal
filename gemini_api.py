@@ -11,6 +11,7 @@ from util import Util
 
 genai.configure(api_key= "your_gemini_api_key")
 
+
 util = Util()
 
 class MyGeminiApi():
