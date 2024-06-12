@@ -45,11 +45,16 @@ and run the script with Python:
 python3 console.py
 ```
 
+<img src="screenshots/get_started.png" alt = "get started">
+
 ### Commands
 
 * **exit**: Exit the console
 * **clear**: Clear the console screen
 * **history**: View the history of commands. If you provide a title as an argument, you can view the content of that specific history item. Example usage: `history <title>`
+
+    <img src="screenshots/history.png" alt = "forecast_screen">
+
 * **history_clear**: Clear the history. You can either clear all history or a specific history item by providing a title as an argument. Example usage: `history_clear all` or `history_clear <title>`
 
 ### Autocomplete
